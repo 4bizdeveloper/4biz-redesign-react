@@ -1,0 +1,83 @@
+:root {
+  --neon-blue: #00f2ff;
+  --dark-bg: #050505;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-bg);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--neon-blue);
+  transform-origin: 0%;
+  z-index: 1000;
+}
+
+.glass-nav {
+  position: fixed;
+  top: 20px;
+  width: 90%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.1);
+  z-index: 999;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.glow-text {
+  font-size: 4rem;
+  background: linear-gradient(to right, #fff, var(--neon-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.5));
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 50px 10%;
+}
+
+.service-card {
+  background: var(--glass);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.service-card .icon { color: var(--neon-blue); margin-bottom: 15px; }
+
+.cyber-btn {
+  background: transparent;
+  color: var(--neon-blue);
+  border: 1px solid var(--neon-blue);
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+}

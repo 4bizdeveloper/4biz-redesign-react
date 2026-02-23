@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --cyber-bg: #020421;
+}
+
+body {
+  background-color: var(--cyber-bg);
+  color: white;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+  color: transparent;
+}
+
+/* Custom Scrollbar to match Cyberr.ai */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #020421; }
+::-webkit-scrollbar-thumb { background: #00f2ff; border-radius: 10px; }
